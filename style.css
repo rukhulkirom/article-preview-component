@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", serif;
+}
+
+body {
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 13px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 900px;
+  display: flex;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.img-container {
+  flex: 1;
+}
+
+.img-container img {
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--very-dark-grayish-blue);
+}
+
+.content h3 {
+  font-size: 0.9rem;
+  color: var(--desaturated-dark-blue);
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.profile .user-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-profile .username h4 {
+  font-size: 0.8rem;
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+}
+
+.user-profile .username p {
+  color: var(--grayish-blue);
+}
+
+.profile .share {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grayish-blue);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+  }
+}
