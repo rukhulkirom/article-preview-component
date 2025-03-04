@@ -47,7 +47,7 @@ main {
 }
 
 .article {
-  padding: 0 3.2rem;
+  padding: 0 2rem;
 }
 
 .article h1 {
@@ -66,7 +66,7 @@ main {
 }
 
 .footer {
-  padding: 3.2rem 3.2rem 2rem 3.2rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,7 +120,7 @@ main {
 }
 
 .share {
-  padding: 3.2rem 3.2rem 2rem 3.2rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -254,7 +254,7 @@ ion-icon {
 
   .article {
     grid-area: article;
-    padding: 3.2rem 4rem 0 4rem;
+    padding: 3.2rem 4rem 0;
   }
 
   .article h1 {
@@ -264,8 +264,9 @@ ion-icon {
 
   .footer {
     grid-area: footer;
-    padding: 2rem 4rem 3.2rem 4rem;
+    padding: 2rem 4rem 3.2rem;
   }
+
   .share {
     grid-area: footer;
     place-content: center;
